@@ -1,0 +1,1655 @@
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/proximanova-bold/proximanova-bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-regular/proximanova-regular-webfont.woff") format("woff");
+}
+::-webkit-input-placeholder {
+  color: #a8adc3;
+}
+
+::-moz-placeholder {
+  color: #a8adc3;
+}
+
+:-ms-input-placeholder {
+  color: #a8adc3;
+}
+
+:-moz-placeholder {
+  color: #a8adc3;
+}
+
+*::selection {
+  color: #fff;
+  background: #6775F0;
+}
+
+*::-moz-selection {
+  color: #fff;
+  background: #6775F0;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+}
+
+tbody::-webkit-scrollbar {
+  width: 4px;
+}
+
+tbody::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid #6775F0;
+}
+
+body {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  color: #9797AF;
+  font-weight: normal;
+  font-family: "ProximaNova";
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #15151F;
+  border: 1px solid #1F1F2E;
+  overflow: hidden;
+}
+
+.defaultbtn {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.defaultbtn img {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+.defaultbtn p {
+  margin-left: 1REM;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  color: white;
+  cursor: pointer;
+}
+.defaultbtn:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.defaultbtn:active {
+  transform: translateY(1px);
+  filter: brightness(110%);
+}
+
+.defaultDropdown {
+  width: 150px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.defaultDropdown img {
+  height: 8px;
+  width: 8px;
+  cursor: pointer;
+}
+.defaultDropdown p {
+  margin-right: 1REM;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  color: white;
+  cursor: pointer;
+}
+.defaultDropdown:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.defaultDropdown:active {
+  transform: translateY(1px);
+  filter: brightness(110%);
+}
+
+.defaultHeader .pos {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.defaultHeader .pos .tag {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+  height: 30px;
+}
+.defaultHeader .pos .tag h1 {
+  border-bottom: 2px solid #6775F0;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1REM;
+}
+
+.actioncontent {
+  height: 30px;
+  width: 100%;
+  position: relative;
+  background: #6775F0;
+  border-radius: 12px;
+  display: block;
+}
+.actioncontent button {
+  display: inline-flex !important;
+  height: 30px !important;
+  width: 33% !important;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.actioncontent button p {
+  padding: 0;
+  margin: 0;
+  font-weight: 550;
+  font-size: 8px;
+  letter-spacing: 0.56px;
+  line-height: 30px !important;
+}
+.actioncontent button p:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.actioncontent button p:active {
+  filter: brightness(150%);
+}
+.actioncontent button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.actioncontent button:active {
+  filter: brightness(150%);
+}
+
+.menubar-container {
+  height: 40px;
+  width: 100%;
+  -webkit-app-region: drag;
+}
+
+.app-container {
+  height: calc(900px - 40px);
+  width: 1600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.sidebar-container {
+  height: 100%;
+  width: 250px;
+}
+
+.content-container {
+  height: 100%;
+  width: 1350px;
+}
+
+.menubar-container {
+  background: #181825;
+  border-bottom: 1px solid #1F1F2E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menubar-container .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+}
+.menubar-container .logo img {
+  margin-left: 20px;
+  height: 14px;
+  width: auto;
+}
+.menubar-container .logo h1 {
+  margin-left: 15px;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+  line-height: 14px;
+  font-weight: bold;
+  color: white;
+}
+.menubar-container .controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 50%;
+}
+.menubar-container .controls div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-app-region: no-drag;
+}
+.menubar-container .controls div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menubar-container .controls div button img {
+  width: 14px;
+  height: 14px;
+}
+.menubar-container .controls div button img:hover {
+  cursor: pointer;
+}
+.menubar-container .controls div button img:active {
+  transform: translateY(0.5px);
+  filter: brightness(150%);
+}
+.menubar-container .controls div .minimize {
+  margin-right: 15px;
+}
+.menubar-container .controls div .close {
+  margin-right: 20px;
+}
+
+.sidebar-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #181825;
+}
+.sidebar-container .profile-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #1F1F2E;
+}
+.sidebar-container .profile-container h1 {
+  margin: 1REM 10px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.08rem;
+  font-weight: bold;
+}
+.sidebar-container .nav-container {
+  margin-top: 0.8REM;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.sidebar-container .nav-container .header {
+  margin: 0.5REM 0 0 0;
+  width: 100%;
+}
+.sidebar-container .nav-container .header h4 {
+  margin-left: 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #6775F0;
+  letter-spacing: 0.08rem;
+  font-weight: bold;
+}
+.sidebar-container .nav-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.5REM 0 0 0;
+}
+.sidebar-container .nav-container ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 45px;
+  width: 90%;
+  margin: 5px 10px;
+}
+.sidebar-container .nav-container ul li button {
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.sidebar-container .nav-container ul li button img {
+  width: 25px;
+  height: 25px;
+}
+.sidebar-container .nav-container ul li button img:hover {
+  cursor: pointer;
+}
+.sidebar-container .nav-container ul li button h2 {
+  text-align: left;
+  line-height: 45px;
+  width: 100%;
+  margin-left: 10px;
+  letter-spacing: 0.08REM;
+  font-size: 12px;
+  color: #9797AF;
+}
+.sidebar-container .nav-container ul li button h2:hover {
+  cursor: pointer;
+}
+.sidebar-container .nav-container ul li button:hover {
+  cursor: pointer;
+}
+.sidebar-container .nav-container ul li:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.sidebar-container .nav-container ul li:active {
+  transform: translateY(0.5px);
+  filter: brightness(150%);
+}
+.sidebar-container .nav-container ul .selected {
+  border-radius: 8px;
+  background: #6775F0;
+}
+.sidebar-container .nav-container ul .selected h2 {
+  color: white;
+}
+.sidebar-container .nav-container ul .selected img {
+  filter: brightness(0) invert(1);
+}
+.sidebar-container .nav-container ul .selected:hover {
+  cursor: pointer;
+  filter: none !important;
+}
+.sidebar-container .nav-container ul:last-child {
+  padding-bottom: 5px;
+}
+.sidebar-container .buttons {
+  margin-top: 29REM;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar-container .buttons .import {
+  background: #21BF73;
+}
+.sidebar-container .buttons .export {
+  background: #6775F0;
+}
+
+.dashboard-container {
+  width: 100%;
+  height: 100%;
+}
+.dashboard-container .dashboard {
+  margin: 0 2REM;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard-container .dashboard .top {
+  height: 280px;
+  width: 100%;
+  margin: 2REM 0 0 0;
+}
+.dashboard-container .dashboard .top .pos {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dashboard-container .dashboard .top .pos .tag {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+  height: 30px;
+  top: -7px;
+}
+.dashboard-container .dashboard .top .pos .tag h1 {
+  border-bottom: 2px solid #6775F0;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1REM;
+}
+.dashboard-container .dashboard .top .overview {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.dashboard-container .dashboard .top .overview .left {
+  height: 100%;
+  width: 70%;
+}
+.dashboard-container .dashboard .top .overview .left table {
+  margin-top: 30px;
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+.dashboard-container .dashboard .top .overview .left table thead {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+.dashboard-container .dashboard .top .overview .left table thead tr {
+  width: 100.5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.dashboard-container .dashboard .top .overview .left table thead tr th {
+  width: 20%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.56px;
+  color: #9797AF;
+  font-weight: bold;
+  text-align: center;
+}
+.dashboard-container .dashboard .top .overview .left table tbody {
+  display: block;
+  height: 51%;
+  width: 100%;
+  border: 4px solid #1F1F2E;
+  border-radius: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.dashboard-container .dashboard .top .overview .left table tbody tr {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.dashboard-container .dashboard .top .overview .left table tbody tr td {
+  width: 20%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.dashboard-container .dashboard .top .overview .left table tbody tr td p {
+  color: white;
+}
+.dashboard-container .dashboard .top .overview .left table tbody tr td .title {
+  width: 50%;
+  text-align: left;
+}
+.dashboard-container .dashboard .top .overview .left table tbody tr td .value {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dashboard-container .dashboard .top .overview .left table tbody tr .empty-table {
+  width: 100%;
+}
+.dashboard-container .dashboard .top .overview .left table tbody tr .empty-table h4 {
+  margin-top: 2.5REM;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.dashboard-container .dashboard .top .overview .left table tbody .even {
+  background: #15151F;
+}
+.dashboard-container .dashboard .top .overview .left table tbody .odd {
+  background: #181825;
+}
+.dashboard-container .dashboard .top .overview .left .button {
+  position: absolute;
+  top: 220px;
+  left: 705px;
+}
+.dashboard-container .dashboard .top .overview .left .button button {
+  background-color: #F06775;
+}
+.dashboard-container .dashboard .top .overview .right {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.dashboard-container .dashboard .top .overview .right .chart-container {
+  height: 280px;
+  width: 320px;
+  border: 4px solid #1F1F2E;
+  border-radius: 8px;
+  background: #15151F;
+  position: relative;
+}
+.dashboard-container .dashboard .top .overview .right .chart-container .custom-tooltip {
+  z-index: 5;
+  background: red;
+  color: white;
+}
+.dashboard-container .dashboard .top .overview .right .chart-container .empty-chart {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.dashboard-container .dashboard .top .overview .right .chart-container .empty-chart p {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.dashboard-container .dashboard .top .overview .right .button {
+  position: absolute;
+  top: 267px;
+  right: 90px;
+}
+.dashboard-container .dashboard .top .overview .right .button button {
+  background-color: #6775F0;
+}
+.dashboard-container .dashboard .top .overview .right .button .showing {
+  border-radius: 8px 8px 0 0 !important;
+}
+.dashboard-container .dashboard .top .overview .right .button .dropdown {
+  width: 100%;
+}
+.dashboard-container .dashboard .top .overview .right .button .dropdown ul {
+  width: 100%;
+}
+.dashboard-container .dashboard .top .overview .right .button .dropdown ul li {
+  width: 100%;
+}
+.dashboard-container .dashboard .top .overview .right .button .dropdown ul li button {
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  color: white;
+  cursor: pointer;
+}
+.dashboard-container .dashboard .top .overview .right .button .dropdown ul li .last {
+  border-radius: 0 0 8px 8px;
+}
+.dashboard-container .dashboard .top .overview .right .button .dropdown ul li:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.dashboard-container .dashboard .top .overview .right .button .dropdown ul li:active {
+  filter: brightness(110%);
+}
+.dashboard-container .dashboard .top .overview .right .hide {
+  display: none;
+}
+.dashboard-container .dashboard .bot {
+  height: 450px;
+  width: 100%;
+  margin: 0 0 2REM 0;
+}
+.dashboard-container .dashboard .bot .pos {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dashboard-container .dashboard .bot .pos .tag {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+  height: 30px;
+  top: -1px;
+  border-radius: 20px;
+}
+.dashboard-container .dashboard .bot .pos .tag h1 {
+  text-align: center;
+  border-bottom: 2px solid #6775F0;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1REM;
+}
+.dashboard-container .dashboard .bot .order-list {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: table;
+}
+.dashboard-container .dashboard .bot .order-list table {
+  margin: 2REM 0 0 0;
+  height: 60%;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.dashboard-container .dashboard .bot .order-list table thead {
+  display: block;
+  width: 100%;
+}
+.dashboard-container .dashboard .bot .order-list table thead tr {
+  width: 100%;
+  display: inline-block;
+}
+.dashboard-container .dashboard .bot .order-list table thead tr th {
+  width: 211px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.56px;
+  color: #9797AF;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+.dashboard-container .dashboard .bot .order-list table thead tr .id {
+  margin-left: 0.4%;
+}
+.dashboard-container .dashboard .bot .order-list table tbody {
+  border: 4px solid #1F1F2E;
+  border-radius: 8px;
+  display: block;
+  width: 99%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.dashboard-container .dashboard .bot .order-list table tbody tr {
+  height: 40px;
+  width: 100%;
+  display: inline-block;
+}
+.dashboard-container .dashboard .bot .order-list table tbody tr td {
+  width: 211px;
+  height: 40px;
+}
+.dashboard-container .dashboard .bot .order-list table tbody tr td p {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  font-size: 14px;
+  line-height: 40px;
+}
+.dashboard-container .dashboard .bot .order-list table tbody tr td button {
+  width: 100%;
+  height: 30px;
+}
+.dashboard-container .dashboard .bot .order-list table tbody tr td button img {
+  height: 20px;
+  width: auto;
+}
+.dashboard-container .dashboard .bot .order-list table tbody tr td button img:hover {
+  cursor: pointer;
+}
+.dashboard-container .dashboard .bot .order-list table tbody .even {
+  background: #15151F;
+}
+.dashboard-container .dashboard .bot .order-list table tbody .odd {
+  background: #181825;
+}
+.dashboard-container .dashboard .bot .order-list table .empty-table {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard-container .dashboard .bot .order-list table .empty-table h4 {
+  margin-top: 16REM;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.dashboard-container .dashboard .bot .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: absolute;
+  width: 100%;
+  top: 825px;
+  left: 565px;
+}
+.dashboard-container .dashboard .bot .buttons .viewall button {
+  background: #F06775;
+}
+.dashboard-container .dashboard .bot .buttons .addsale {
+  left: 120px;
+  margin-right: 1REM;
+}
+.dashboard-container .dashboard .bot .buttons .addsale button {
+  background: #21BF73;
+}
+
+.orders-container,
+.expenses-container {
+  width: 100%;
+  height: 100%;
+}
+.orders-container .orders,
+.orders-container .expenses,
+.expenses-container .orders,
+.expenses-container .expenses {
+  margin: 0 2REM;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+.orders-container .orders .header .tag,
+.orders-container .expenses .header .tag,
+.expenses-container .orders .header .tag,
+.expenses-container .expenses .header .tag {
+  top: 25px;
+}
+.orders-container .orders .top,
+.orders-container .expenses .top,
+.expenses-container .orders .top,
+.expenses-container .expenses .top {
+  margin-top: 55px;
+  width: 100%;
+}
+.orders-container .orders .top .menu,
+.orders-container .expenses .top .menu,
+.expenses-container .orders .top .menu,
+.expenses-container .expenses .top .menu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2px solid #1F1F2E;
+}
+.orders-container .orders .top .menu ul,
+.orders-container .expenses .top .menu ul,
+.expenses-container .orders .top .menu ul,
+.expenses-container .expenses .top .menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.orders-container .orders .top .menu .left,
+.orders-container .expenses .top .menu .left,
+.expenses-container .orders .top .menu .left,
+.expenses-container .expenses .top .menu .left {
+  width: 30%;
+}
+.orders-container .orders .top .menu .left li,
+.orders-container .expenses .top .menu .left li,
+.expenses-container .orders .top .menu .left li,
+.expenses-container .expenses .top .menu .left li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.orders-container .orders .top .menu .left li button,
+.orders-container .expenses .top .menu .left li button,
+.expenses-container .orders .top .menu .left li button,
+.expenses-container .expenses .top .menu .left li button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.orders-container .orders .top .menu .left li button p,
+.orders-container .expenses .top .menu .left li button p,
+.expenses-container .orders .top .menu .left li button p,
+.expenses-container .expenses .top .menu .left li button p {
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  color: #9797AF;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.orders-container .orders .top .menu .left li button:hover,
+.orders-container .expenses .top .menu .left li button:hover,
+.expenses-container .orders .top .menu .left li button:hover,
+.expenses-container .expenses .top .menu .left li button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.orders-container .orders .top .menu .left li button:active,
+.orders-container .expenses .top .menu .left li button:active,
+.expenses-container .orders .top .menu .left li button:active,
+.expenses-container .expenses .top .menu .left li button:active {
+  transform: translateY(1px);
+  filter: brightness(110%);
+}
+.orders-container .orders .top .menu .left li .selected,
+.orders-container .expenses .top .menu .left li .selected,
+.expenses-container .orders .top .menu .left li .selected,
+.expenses-container .expenses .top .menu .left li .selected {
+  background: #F06775;
+  border-radius: 8px;
+}
+.orders-container .orders .top .menu .left li .selected p,
+.orders-container .expenses .top .menu .left li .selected p,
+.expenses-container .orders .top .menu .left li .selected p,
+.expenses-container .expenses .top .menu .left li .selected p {
+  color: white;
+}
+.orders-container .orders .top .menu .right,
+.orders-container .expenses .top .menu .right,
+.expenses-container .orders .top .menu .right,
+.expenses-container .expenses .top .menu .right {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.orders-container .orders .top .menu .right .searchbar,
+.orders-container .expenses .top .menu .right .searchbar,
+.expenses-container .orders .top .menu .right .searchbar,
+.expenses-container .expenses .top .menu .right .searchbar {
+  width: 400px;
+  height: 36px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 8px;
+  border: 2px solid #6775F0;
+  background: #15151F;
+  margin-right: 169px;
+  position: relative;
+}
+.orders-container .orders .top .menu .right .searchbar img,
+.orders-container .expenses .top .menu .right .searchbar img,
+.expenses-container .orders .top .menu .right .searchbar img,
+.expenses-container .expenses .top .menu .right .searchbar img {
+  margin: 0 0.5REM;
+  height: 16px;
+  width: 16px;
+}
+.orders-container .orders .top .menu .right .searchbar input,
+.orders-container .expenses .top .menu .right .searchbar input,
+.expenses-container .orders .top .menu .right .searchbar input,
+.expenses-container .expenses .top .menu .right .searchbar input {
+  margin-left: 0.2REM;
+  color: white;
+  width: 100%;
+}
+.orders-container .orders .top .menu .right .searchbar input::placeholder,
+.orders-container .expenses .top .menu .right .searchbar input::placeholder,
+.expenses-container .orders .top .menu .right .searchbar input::placeholder,
+.expenses-container .expenses .top .menu .right .searchbar input::placeholder {
+  color: #9797AF;
+}
+.orders-container .orders .top .menu .right .searchbar:hover,
+.orders-container .expenses .top .menu .right .searchbar:hover,
+.expenses-container .orders .top .menu .right .searchbar:hover,
+.expenses-container .expenses .top .menu .right .searchbar:hover {
+  filter: none;
+}
+.orders-container .orders .top .menu .right .searchbar:active,
+.orders-container .expenses .top .menu .right .searchbar:active,
+.expenses-container .orders .top .menu .right .searchbar:active,
+.expenses-container .expenses .top .menu .right .searchbar:active {
+  transform: none;
+  filter: none;
+}
+.orders-container .orders .top .menu .right .Filter,
+.orders-container .expenses .top .menu .right .Filter,
+.expenses-container .orders .top .menu .right .Filter,
+.expenses-container .expenses .top .menu .right .Filter {
+  background: #892cdc;
+}
+.orders-container .orders .top .menu .right .Add,
+.orders-container .expenses .top .menu .right .Add,
+.expenses-container .orders .top .menu .right .Add,
+.expenses-container .expenses .top .menu .right .Add {
+  background: #21BF73;
+}
+.orders-container .orders .top .menu .right .reset,
+.orders-container .expenses .top .menu .right .reset,
+.expenses-container .orders .top .menu .right .reset,
+.expenses-container .expenses .top .menu .right .reset {
+  position: absolute;
+  width: 100px;
+}
+.orders-container .orders .bot table,
+.orders-container .expenses .bot table,
+.expenses-container .orders .bot table,
+.expenses-container .expenses .bot table {
+  margin-top: 1REM;
+  height: 650px;
+  width: 1286px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.orders-container .orders .bot table thead,
+.orders-container .expenses .bot table thead,
+.expenses-container .orders .bot table thead,
+.expenses-container .expenses .bot table thead {
+  display: block;
+  width: 1278px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  left: -0.25%;
+}
+.orders-container .orders .bot table thead tr,
+.orders-container .expenses .bot table thead tr,
+.expenses-container .orders .bot table thead tr,
+.expenses-container .expenses .bot table thead tr {
+  width: 1278px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.orders-container .orders .bot table thead tr .id,
+.orders-container .expenses .bot table thead tr .id,
+.expenses-container .orders .bot table thead tr .id,
+.expenses-container .expenses .bot table thead tr .id {
+  position: relative;
+  left: 0.4%;
+}
+.orders-container .orders .bot table thead tr th,
+.orders-container .expenses .bot table thead tr th,
+.expenses-container .orders .bot table thead tr th,
+.expenses-container .expenses .bot table thead tr th {
+  width: 209px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.56px;
+  color: #9797AF;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orders-container .orders .bot table thead tr th p,
+.orders-container .expenses .bot table thead tr th p,
+.expenses-container .orders .bot table thead tr th p,
+.expenses-container .expenses .bot table thead tr th p {
+  width: 100%;
+}
+.orders-container .orders .bot table tbody,
+.orders-container .expenses .bot table tbody,
+.expenses-container .orders .bot table tbody,
+.expenses-container .expenses .bot table tbody {
+  border: 4px solid #1F1F2E;
+  border-radius: 8px;
+  display: block;
+  box-sizing: border-box;
+  width: 1278px;
+  height: 610px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+.orders-container .orders .bot table tbody tr,
+.orders-container .expenses .bot table tbody tr,
+.expenses-container .orders .bot table tbody tr,
+.expenses-container .expenses .bot table tbody tr {
+  height: 30px;
+  width: 1274px;
+  margin: 0.5REM;
+}
+.orders-container .orders .bot table tbody tr td,
+.orders-container .expenses .bot table tbody tr td,
+.expenses-container .orders .bot table tbody tr td,
+.expenses-container .expenses .bot table tbody tr td {
+  width: 213px;
+  height: 30px;
+}
+.orders-container .orders .bot table tbody tr td p,
+.orders-container .expenses .bot table tbody tr td p,
+.expenses-container .orders .bot table tbody tr td p,
+.expenses-container .expenses .bot table tbody tr td p {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  font-size: 14px;
+  line-height: 40px;
+}
+.orders-container .orders .bot table tbody tr td button,
+.orders-container .expenses .bot table tbody tr td button,
+.expenses-container .orders .bot table tbody tr td button,
+.expenses-container .expenses .bot table tbody tr td button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.orders-container .orders .bot table tbody tr td button img,
+.orders-container .expenses .bot table tbody tr td button img,
+.expenses-container .orders .bot table tbody tr td button img,
+.expenses-container .expenses .bot table tbody tr td button img {
+  height: 20px;
+  width: auto;
+}
+.orders-container .orders .bot table tbody tr td button img:hover,
+.orders-container .expenses .bot table tbody tr td button img:hover,
+.expenses-container .orders .bot table tbody tr td button img:hover,
+.expenses-container .expenses .bot table tbody tr td button img:hover {
+  cursor: pointer;
+}
+.orders-container .orders .bot table tbody tr .actions button,
+.orders-container .expenses .bot table tbody tr .actions button,
+.expenses-container .orders .bot table tbody tr .actions button,
+.expenses-container .expenses .bot table tbody tr .actions button {
+  position: relative;
+}
+.orders-container .orders .bot table tbody .even,
+.orders-container .expenses .bot table tbody .even,
+.expenses-container .orders .bot table tbody .even,
+.expenses-container .expenses .bot table tbody .even {
+  background: #15151F;
+}
+.orders-container .orders .bot table tbody .odd,
+.orders-container .expenses .bot table tbody .odd,
+.expenses-container .orders .bot table tbody .odd,
+.expenses-container .expenses .bot table tbody .odd {
+  background: #181825;
+}
+.orders-container .orders .bot table .empty-table,
+.orders-container .expenses .bot table .empty-table,
+.expenses-container .orders .bot table .empty-table,
+.expenses-container .expenses .bot table .empty-table {
+  height: 300px;
+  width: 1282px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.orders-container .orders .bot table .empty-table h4,
+.orders-container .expenses .bot table .empty-table h4,
+.expenses-container .orders .bot table .empty-table h4,
+.expenses-container .expenses .bot table .empty-table h4 {
+  margin-top: 15REM;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.expenses-container .left {
+  justify-content: flex-start !important;
+}
+.expenses-container .left li {
+  margin-left: 24px;
+}
+
+.analytics-container {
+  width: 100%;
+  height: 100%;
+}
+.analytics-container .analytics {
+  margin: 0 2REM;
+  height: 100%;
+  width: 1286px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+.analytics-container .analytics .header .tag {
+  top: 25px;
+}
+.analytics-container .analytics .top {
+  margin-top: 85px;
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.analytics-container .analytics .top .chart {
+  margin-top: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border: 4px solid #1F1F2E;
+  border-radius: 8px;
+  background: #15151F;
+}
+.analytics-container .analytics .top .chart .pos {
+  height: 90%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.analytics-container .analytics .top .buttons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80px;
+  height: 40px;
+  top: 26px;
+  right: 74px;
+}
+.analytics-container .analytics .top .buttons button {
+  width: 90px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.analytics-container .analytics .top .buttons button p {
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  color: #9797AF;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.analytics-container .analytics .top .buttons button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.analytics-container .analytics .top .buttons button:active {
+  transform: translateY(1px);
+  filter: brightness(110%);
+}
+.analytics-container .analytics .top .buttons .selected {
+  background: #F06775;
+  border-radius: 8px;
+}
+.analytics-container .analytics .top .buttons .selected p {
+  color: white;
+}
+.analytics-container .analytics .bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+}
+.analytics-container .analytics .bot table {
+  margin-top: 30px;
+  height: 250px;
+  width: 900px;
+  position: relative;
+}
+.analytics-container .analytics .bot table thead {
+  display: block;
+  width: 900px;
+  height: 40px;
+}
+.analytics-container .analytics .bot table thead tr {
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.analytics-container .analytics .bot table thead tr th {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.56px;
+  color: #9797AF;
+  font-weight: bold;
+  text-align: center;
+}
+.analytics-container .analytics .bot table tbody {
+  display: block;
+  height: 120px;
+  width: 900px;
+  border: 4px solid #1F1F2E;
+  border-radius: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.analytics-container .analytics .bot table tbody tr {
+  height: 40px;
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.analytics-container .analytics .bot table tbody tr td {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.analytics-container .analytics .bot table tbody tr td p {
+  color: white;
+}
+.analytics-container .analytics .bot table tbody tr td .title {
+  width: 100%;
+  text-align: left;
+}
+.analytics-container .analytics .bot table tbody tr td .value {
+  width: 100%;
+  text-align: center;
+}
+.analytics-container .analytics .bot table tbody tr .empty-table {
+  height: 100%;
+  width: 100%;
+}
+.analytics-container .analytics .bot table tbody tr .empty-table h4 {
+  margin-top: 5REM;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.analytics-container .analytics .bot table tbody .even {
+  background: #15151F;
+}
+.analytics-container .analytics .bot table tbody .odd {
+  background: #181825;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.popupform-container {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 0px);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+}
+.popupform-container .content-container {
+  position: absolute;
+  height: 800px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #15151F;
+  left: 35%;
+  top: 50px;
+}
+.popupform-container .content-container .defaultHeader {
+  width: 100%;
+}
+.popupform-container .content-container .defaultHeader .pos {
+  position: static;
+  width: 100%;
+}
+.popupform-container .content-container .defaultHeader .pos .tag {
+  position: static;
+  margin: 1REM 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.popupform-container .content-container .defaultHeader .pos .tag h1 {
+  text-align: center;
+}
+.popupform-container .content-container .selection {
+  width: 100%;
+}
+.popupform-container .content-container .selection h6 {
+  width: 100%;
+  color: #9797AF;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  text-align: center;
+}
+.popupform-container .content-container .selection .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.popupform-container .content-container .selection .buttons div {
+  height: 80px;
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.popupform-container .content-container .selection .buttons div button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.popupform-container .content-container .selection .buttons div button p {
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  color: #9797AF;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.popupform-container .content-container .selection .buttons div button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.popupform-container .content-container .selection .buttons div button:active {
+  transform: translateY(1px);
+  filter: brightness(110%);
+}
+.popupform-container .content-container .selection .buttons div .selected {
+  border-radius: 8px;
+  background: #F06775;
+}
+.popupform-container .content-container .selection .buttons div .selected p {
+  color: white;
+}
+.popupform-container .content-container .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20px;
+  width: 100%;
+}
+.popupform-container .content-container .form .userinput {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1REM 0;
+}
+.popupform-container .content-container .form .userinput label {
+  width: 70%;
+  text-align: left;
+  margin-bottom: 10px;
+  letter-spacing: 0.56px;
+  color: white;
+  font-weight: bold;
+}
+.popupform-container .content-container .form .userinput input {
+  border-radius: 8px;
+  border: 4px solid #1F1F2E;
+  background: #15151F;
+  height: 40px;
+  width: 70%;
+  color: white;
+  padding-left: 0.2REM;
+}
+.popupform-container .content-container .form .userinput input::placeholder {
+  color: #9797AF;
+  padding-left: 0.2REM;
+}
+.popupform-container .content-container .form .userinput input:hover {
+  filter: none;
+}
+.popupform-container .content-container .form .userinput input:active {
+  transform: none;
+  filter: none;
+}
+.popupform-container .content-container .form .dropdown {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 1REM 20px 0 20px;
+  z-index: 15;
+}
+.popupform-container .content-container .form .dropdown label {
+  width: 30%;
+  text-align: left;
+  letter-spacing: 0.56px;
+  color: white;
+  font-weight: bold;
+}
+.popupform-container .content-container .form .dropdown button {
+  background-color: #6775F0;
+}
+.popupform-container .content-container .form .ddcontent {
+  width: 30%;
+  position: absolute;
+  right: 55px;
+  bottom: 45px;
+}
+.popupform-container .content-container .form .ddcontent ul {
+  width: 100%;
+}
+.popupform-container .content-container .form .ddcontent ul li {
+  width: 100%;
+}
+.popupform-container .content-container .form .ddcontent ul li button {
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  color: white;
+  cursor: pointer;
+}
+.popupform-container .content-container .form .ddcontent ul li .last {
+  border-radius: 0 0 8px 8px;
+}
+.popupform-container .content-container .form .ddcontent ul li:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.popupform-container .content-container .form .ddcontent ul li:active {
+  filter: brightness(110%);
+}
+.popupform-container .content-container .form .ddexpense {
+  bottom: 9px;
+}
+.popupform-container .content-container .form .showing {
+  border-radius: 8px 8px 0 0;
+}
+.popupform-container .content-container .submit {
+  margin: 2REM 20px 0 20px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.popupform-container .content-container .submit button {
+  background-color: #21BF73;
+}
+.popupform-container .content-container .submit button p {
+  margin-left: 0;
+}
+
+.import-container,
+.export-container {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 0px);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+}
+.import-container .content-container,
+.export-container .content-container {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #15151F;
+  left: 45%;
+  top: 250px;
+}
+.import-container .content-container .defaultHeader,
+.export-container .content-container .defaultHeader {
+  width: 100%;
+}
+.import-container .content-container .defaultHeader .pos,
+.export-container .content-container .defaultHeader .pos {
+  position: static;
+  width: 100%;
+}
+.import-container .content-container .defaultHeader .pos .tag,
+.export-container .content-container .defaultHeader .pos .tag {
+  position: static;
+  margin: 1REM 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.import-container .content-container .defaultHeader .pos .tag h1,
+.export-container .content-container .defaultHeader .pos .tag h1 {
+  text-align: center;
+}
+.import-container .content-container .btn-container,
+.export-container .content-container .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 180px;
+}
+.import-container .content-container .btn-container button,
+.export-container .content-container .btn-container button {
+  width: 80%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 4px solid #1F1F2E;
+  border-radius: 12px;
+}
+.import-container .content-container .btn-container button img,
+.export-container .content-container .btn-container button img {
+  height: 46px;
+  width: 46px;
+}
+.import-container .content-container .btn-container button img:hover,
+.export-container .content-container .btn-container button img:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.import-container .content-container .btn-container button:hover,
+.export-container .content-container .btn-container button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.import-container .content-container .btn-container button:active,
+.export-container .content-container .btn-container button:active {
+  filter: brightness(110%);
+}
+
+/*# sourceMappingURL=theme.css.map */
